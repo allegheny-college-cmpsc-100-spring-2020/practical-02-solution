@@ -14,10 +14,9 @@ public class MathTrick {
     // Set up cards
     int cardA = 8;
     int cardB = 7;
-    int workingTotal;
+    int workingTotal = cardB * 2;
     int magicNumber = 10 - cardA;
     // Do the trick
-    workingTotal = cardB * 2;
     workingTotal += 2;
     workingTotal *= 5;
     workingTotal -= magicNumber;

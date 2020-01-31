@@ -11,7 +11,7 @@ src/main/java/practicaltwo:
         MatchFileFragment --fragment "{Your Name Here}" --count 0 --exact
         MatchFileFragment --fragment "TODO" --count 0 --exact
         MatchFileFragment --fragment "+=" --count 1
-        MatchFileFragment --fragment "\-=" --count 1
+        MatchFileFragment --fragment "-=" --count 1
         MatchFileFragment --fragment "*=" --count 1
         MatchFileFragment --fragment "int cardA" --count 1 --exact
         MatchFileFragment --fragment "int cardB" --count 1 --exact
