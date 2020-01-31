@@ -1,0 +1,25 @@
+---
+name: practical-02
+break: true
+indent: 4
+---
+
+src/main/java/practicaltwo:
+    MathTrick.java:
+        ConfirmFileExists
+        CountSingleLineComments --language Java --count 3
+        MatchFileFragment --fragment "{Your Name Here}" --count 0 --exact
+        MatchFileFragment --fragment "TODO" --count 0 --exact
+        MatchFileFragment --fragment "+=" --count 1
+        MatchFileFragment --fragment "-=" --count 1
+        MatchFileFragment --fragment "*=" --count 1
+        MatchFileFragment --fragment "int cardA" --count 1 --exact
+        MatchFileFragment --fragment "int cardB" --count 1 --exact
+        MatchFileFragment --fragment "int magicNumber" --count 1 --exact
+        MatchFileFragment --fragment "int workingTotal" --count 1 --exact
+        MatchFileFragment --fragment "\t" --count 2
+        MatchFileFragment --fragment "System.out.println" --count 2 --exact
+        
+ExecuteCommand --command "gradle build"
+ExecuteCommand --command "gradle run -q --console plain run"
+MatchCommandFragment --command "gradle run -q --console plain run" --fragment "78" --count 2 --exact
